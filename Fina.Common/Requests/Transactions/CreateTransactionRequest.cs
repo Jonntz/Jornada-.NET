@@ -23,6 +23,10 @@ namespace Fina.Common.Requests.Transactions
         public long CategoryId { get; set; }
 
         [Required(ErrorMessage = "Data Inválida!")]
+        public DateTime? CreatedAt { get; set; }
+
+        [Required(ErrorMessage = "Data Inválida!")]
         public DateTime? PaidOrreceivedAt { get; set; }
+        
     }
 }
